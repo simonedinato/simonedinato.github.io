@@ -11,9 +11,22 @@
         function myFunction() {
           alert("Coming Soon!");
         }
+        function updated(){
+            var count= document.getElementById("counter");
+            count.innerHTML=++upto;
+            if(upto===1000)
+            {
+                clearInterval(counts);
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "73%" 
+        }
     </script>
 </head>
-<body>
+<body onload="zoom()">
     <div class="profile-card">
         <figure class="profile-card__img">
             <img src="Profile Pic.jpg" alt="...">
@@ -34,15 +47,21 @@
 
         <div class="profile-card__info">
             <div>
-                <div>850</div>
-                <div>Code-lines/day</div>
+                <div>
+                    <span id = "counter1">69</span>
+                </div>
+                <div>Tutorials watched</div>
             </div>
             <div>
-                <div>4</div>
-                <div>Projects</div>
+                <div>
+                    <span id = "counter2">4</span>
+                </div>
+                <div>Breaks per day</div>
             </div>
             <div>
-                <div>3</div>
+                <div id = "counter3">
+                    <span id = "age"></span>
+                </div>
                 <div>Experience years</div>
             </div>
         </div>
@@ -92,4 +111,40 @@
         </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script>
+    const actualDate = new Date()
+    const bornDate = new Date(2002, 09, 25)
+    const ris = actualDate.getFullYear() - bornDate.getFullYear()
+
+    $('#age').html(ris)
+
+    var calculate1 = setInterval(c1, 50)
+    var calculate2 = setInterval(c2, 900)
+    var calculate3 = setInterval(c3, 200)
+    let x = 0
+    let y = 0
+    let z = 0
+    function c1(){
+        x++
+        document.querySelector('#counter1').innerHTML = x
+        if(x == 69){
+            clearInterval(calculate1)
+        }
+    }
+    function c2(){
+        y++
+        document.querySelector('#counter2').innerHTML = y
+        if(y == 4){
+            clearInterval(calculate2)
+        }
+    }
+    function c3(){
+        z++
+        document.querySelector('#age').innerHTML = z
+        if(z == ris){
+            clearInterval(calculate3)
+        }
+    }
+</script>
 </html>
