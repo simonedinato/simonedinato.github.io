@@ -20,11 +20,11 @@
             }
         }
     </script>
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         function zoom() {
             document.body.style.zoom = "73%" 
         }
-    </script>
+    </script>-->
 </head>
 <body onload="zoom()">
     <div class="profile-card">
@@ -120,8 +120,8 @@
     $('#age').html(ris)
 
     var calculate1 = setInterval(c1, 50)
-    var calculate2 = setInterval(c2, 900)
-    var calculate3 = setInterval(c3, 200)
+    var calculate2 = setInterval(c2, 50)
+    var calculate3 = setInterval(c3, 50)
     let x = 0
     let y = 0
     let z = 0
@@ -142,7 +142,7 @@
     function c3(){
         z++
         document.querySelector('#age').innerHTML = z
-        if(z == ris){
+        if(z == 2/*ris*/){
             clearInterval(calculate3)
         }
     }

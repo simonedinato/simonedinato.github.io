@@ -8,14 +8,14 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-
+        
     &::before{
         content: '';
         position: fixed;
         inset: 0;
         z-index: -1;
         pointer-events: none;
-        background: url("s1.jpg") no-repeat center;
+        background: url("s4.jpg") no-repeat center;
         background-size: cover;
         animation: backgroundZoomAnimate 20s forwards;
     }
@@ -42,9 +42,10 @@ body{
     flex-direction: column;
     gap: 40px;
 
-    @media screen and (max-width: 768px){
-        width:auto;
-    }
+
+    /*@media screen and (max-width: 768px){
+        width:500px;
+    }*/
 
     &__img img{
         margin:auto;
