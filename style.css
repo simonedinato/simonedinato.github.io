@@ -58,8 +58,8 @@ body::before {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
   box-shadow: 0 10px 60px -10px rgba(13, 28, 39, 0.5);
 }
