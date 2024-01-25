@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" type = "text/css">
+    <link rel="stylesheet" href="reset.css" type = "text/css">
     <script>
 
         function myFunction(){
@@ -49,19 +49,19 @@
         <div class="profile-card__info">
             <div>
                 <div>
-                    <span id = "counter1">69</span>
+                    <span id = "counter1"></span>
                 </div>
                 <div>Tutorials watched</div>
             </div>
             <div>
                 <div>
-                    <span id = "counter2">4</span>
+                    <span id = "counter2"></span>
                 </div>
                 <div>Projects called untitled</div>
             </div>
             <div>
-                <div id = "counter3">
-                    <span id = "age"></span>
+                <div>
+                    <span id = "counter3"></span>
                 </div>
                 <div>Experience years</div>
             </div>
@@ -115,7 +115,7 @@
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <script>
     const actualDate = new Date()
-    const bornDate = new Date(2002, 09, 25)
+    const bornDate = new Date(2002, 9, 25);
     const ris = actualDate.getFullYear() - bornDate.getFullYear()
 
     $('#age').html(ris)
@@ -142,7 +142,7 @@
     }
     function c3(){
         z++
-        document.querySelector('#age').innerHTML = z
+        document.querySelector('#counter3').innerHTML = z
         if(z == 2){
             clearInterval(calculate3)
         }
