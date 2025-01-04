@@ -2,221 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Simone's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" type = "text/css">
+    <link rel="stylesheet" href="reset.css" type = "text/css">
+    <script>
+
+        function myFunction(){
+            window.open("https://datapizza.tech/folio/simonedinato117", "_blank");
+        }
+        function updated(){
+            var count= document.getElementById("counter");
+            count.innerHTML=++upto;
+            if(upto===1000)
+            {
+                clearInterval(counts);
+            }
+        }
+    </script>
+    <!--<script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "73%" 
+        }
+    </script>-->
 </head>
-<body>
-    <header class="header">
-        <a href="#home" class="logo">Simone
-            <span>Dinato</span>
-        </a>
+<body onload="zoom()">
+    <div class="profile-card">
+        <figure class="profile-card__img">
+            <img src="../home.png" alt="...">
+        </figure>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#career">Career</a>
-            <a href="#services">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Simone</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>
-                <b>> Passions:</b> Data Science, <span>Machine Learning, Artificial Intelligence,</span> Web Development, <span>Personal Growth</span>. I am also fascinated by the flows of data and the intricacies of the financial world.<br> <br>
-                <b>> Learning:</b> Currently studying Data Science at <span>Ca' Foscari University of Venice</span>. In addition to my academic pursuits,
-                I am deeply committed to enhancing my skills as a Data Scientist and Web Developer through <span>personal projects</span> and self-directed learning.
-                Beyond technical expertise, I am also devoted to personal growth, regularly immersing myself in <span>books</span> on self-improvement and emotional intelligence.<br> <br>
-                <b>> Future:</b> I constantly seek opportunities to <span>upgrade myself</span>, eager to delve deeper into emerging technologies and methodologies. I envision these topics playing a central role in my future. <br><br>
-                <b>> Currently:</b> Trying to <span>get better.</span>
-            </p>
-
-            <div class="social-icons profile-card__social">
-                <a href="https://www.linkedin.com/in/simone-dinato/" target="_blank" class="linkedin">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                        <line x1="8" y1="11" x2="8" y2="16"></line>
-                        <line x1="8" y1="8" x2="8" y2="8.01"></line>
-                        <line x1="12" y1="16" x2="12" y2="11"></line>
-                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-                    </svg>
-                </a>
-                <a href="https://github.com/simonedinato" target="_blank" class="github">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                    </svg>
-                </a>
-                <a href="https://www.facebook.com/simodinii" target="_blank" class="facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/simone_dinato/" target="_blank" class="instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-                        <circle cx="12" cy="12" r="3"></circle>
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-                    </svg>
-                </a>
-            </div>
-
-            <div class="btn-group">
-                <a href="#contact" class="btn">Contact Me</a>
-                <a href="#projects" class="btn">My Projects</a>
-            </div>
-
-        </div>
-
-        <div class="home-img">
-            <img src="home.png" alt="">
-        </div>
-
-    </section>
-
-    <!-- Education Section -->
-    <section class="education" id="career">
-        <h2 class="heading">Career</h2>
-        <div class="timeline-items">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2016</div>
-                <div class="timeline-content">
-                    <h3>High School - ITCG A. Martini - Business Information Systems</h3>
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021</div>
-                <div class="timeline-content">
-                    <h3>University - Ca' Foscari - Data Science</h3>
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                    <h3>Internship - Padua - Stevanato Group</h3>
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2024</div>
-                <div class="timeline-content">
-                    <h3>Internship - Milan - PwC</h3>
-                    <p></p>
-                </div>
+        <div class="profile-card__desc">
+            <h1>Simone Dinato</h1>
+            <div>Data Scientist</div>
+            <div style="display:flex; align-items:center; gap:10px; justify-content:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="11" r="3"></circle>
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                </svg>
+                <span>Padua, Italy</span>
             </div>
         </div>
-    </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2 class="heading">Skills</h2>
-        <div class="services-container">
-            <div class="service-box" style="border-bottom: 5px solid var(--main-color);border-right: 5px solid var(--main-color);">
-                <div class="service-info">
-                    <h4>RPA Developer</h4>
-                    <p></p>
+        <div class="profile-card__info">
+            <div>
+                <div>
+                    <span id = "counter1"></span>
                 </div>
+                <div>New Ideas per Day</div>
             </div>
-
-            <div class="service-box" style="border-bottom: 5px solid var(--main-color);border-left: 5px solid var(--main-color);">
-                <div class="service-info">
-                    <h4>Software Engineer</h4>
-                    <p></p>
+            <div>
+                <div>
+                    <span id = "counter2"></span>
                 </div>
+                <div>Missed Semicolons</div>
             </div>
-
-            <div class="service-box" style="border-top: 5px solid var(--main-color); border-right: 5px solid var(--main-color);">
-                <div class="service-info">
-                    <h4>Data Analyst</h4>
-                    <p></p>
+            <div>
+                <div>
+                    <span id = "counter3"></span>
                 </div>
-            </div>
-
-            <div class="service-box" style="border-top: 5px solid var(--main-color); border-left: 5px solid var(--main-color);">
-                <div class="service-info">
-                    <h4>IT Consultant</h4>
-                    <p></p>
-                </div>
+                <div>"I need a coffee"</div>
             </div>
         </div>
-    </section>
 
-    <section class="projects" id="projects">
-        <div class="projects-box">
-            <h2 class="heading">Recent Projects</h2>
-            <div class="wrapper">
-                <div class="project-item">
-                    <img src="1.png" alt="">
-                    <h2>Json Parser</h2>
-                    <p>
-                        Developed a robust JSON parser in C++ capable of parsing complex JSON structures.
-                        Ensured type-safety and flexibility by designing a JsonValue class that can seamlessly handle different JSON data types, including strings, numbers, objects, and arrays.
-                    </p>
-                </div>
-
-                <div class="project-item">
-                    <img src="2.png" alt="">
-                    <h2>EUResearchHub</h2>
-                    <p>
-                        Incorporated advanced authentication routes to safeguard user data and ensure secure access.
-                        Utilized structured database models for seamless data management and retrieval.
-                    </p>
-                </div>
-
-                <div class="project-item">
-                    <img src="3.png" alt="">
-                    <h2>Stock Forecasting</h2>
-                    <p>
-                        Extracted and engineered stock data from Yahoo Finance API, performing feature engineering and exploratory analysis to uncover patterns and remove correlations.
-                        Applied advanced supervised learning techniques, including random forests, neural networks, and regression models, to predict stock buying convenience over 5, 10, and 30-day periods.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
-                </div>
-            </div>
-            <div class="input-group-2">
-                <textarea id="" name="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <div class="social-icons profile-card__social">
+        <div class="profile-card__social">
             <a href="https://www.linkedin.com/in/simone-dinato/" target="_blank" class="linkedin">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -249,33 +100,46 @@
             </a>
         </div>
 
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-
-            <li>
-                <a href="#">Skills</a>
-            </li>
-
-            <li>
-                <a href="#">About Me</a>
-            </li>
-
-            <li>
-                <a href="#">Contact</a>
-            </li>
-
-            <li>
-                <a href="#">Projects</a>
-            </li>
-        </ul>
-        <p class="copyright">
-            © Simone Dinato | All Rights Reserved
-        </p>
-    </footer>
-
-
-    <script src ="script.js"></script>
+        <div class="profile-card__actions">
+            <button onclick="myFunction()" class="blue">My Portfolio</button>
+            <button type="submit" onclick="window.open('CV.pdf')" class="orange">My CV</button>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script>
+    const actualDate = new Date()
+    const bornDate = new Date(2002, 9, 25);
+    const ris = actualDate.getFullYear() - bornDate.getFullYear()
+
+    $('#age').html(ris)
+
+    var calculate1 = setInterval(c1, 50)
+    var calculate2 = setInterval(c2, 50)
+    var calculate3 = setInterval(c3, 50)
+    let x = 0
+    let y = 0
+    let z = 0
+    function c1(){
+        x++
+        document.querySelector('#counter1').innerHTML = x
+        if(x == 769){
+            clearInterval(calculate1)
+        }
+    }
+    function c2(){
+        y++
+        document.querySelector('#counter2').innerHTML = y
+        if(y == 1226){
+            clearInterval(calculate2)
+        }
+    }
+    function c3(){
+        z++
+        document.querySelector('#counter3').innerHTML = z
+        if(z == 382){
+            clearInterval(calculate3)
+        }
+    }
+</script>
 </html>
