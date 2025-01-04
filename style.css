@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
 body {
   font: 18px "Nunito", sans-serif;
   color: white;
@@ -14,8 +15,8 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: url("bg.png") no-repeat center;
-  background-size: cover;
+  background: url("bg3.jpg") no-repeat center;
+  background-size: 100%;
   -webkit-animation: backgroundZoomAnimate 20s forwards;
           animation: backgroundZoomAnimate 20s forwards;
 }
@@ -310,4 +311,44 @@ border: none;
 
 .orange:active {
     background: linear-gradient(90deg, #ff9900, #ffcc66, #ff9900, #ff9900);
+}
+
+.glow{
+    margin: auto;
+    cursor: pointer;
+    font-family: "Kode Mono", monospace !important;
+    font-weight: 400;
+    font-style: normal;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
 }
