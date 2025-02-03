@@ -168,6 +168,17 @@ body::before {
   background: linear-gradient(45deg, #333333, #42474d);
   box-shadow: 0 4px 30px rgba(63, 65, 67, 0.6);
 }
+
+.profile-card__social a.whatsapp {
+  background: linear-gradient(45deg, #25D366, #128C7E);
+  box-shadow: 0 4px 30px rgba(37, 211, 102, 0.5);
+}
+
+.profile-card__social a svg {
+  display: block;
+  margin: 0 auto;
+}
+
 .profile-card__actions {
   display: flex;
   align-items: center;
